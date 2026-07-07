@@ -108,10 +108,9 @@ def create_pizza():
 
     return base_price
 
-if __name__ == "__main__":
-    print("\n-------------------------------------------")
-    print("Welcome to the Pizza Order Cost Calculator!")
-    print("-------------------------------------------\n")
-    total_cost = create_order()
-    print(f"Total cost of your order: ${total_cost}")
+print("\n-------------------------------------------")
+print("Welcome to the Pizza Order Cost Calculator!")
+print("-------------------------------------------\n")
+total_cost = create_order()
+print(f"Total cost of your order: ${total_cost}")
 
