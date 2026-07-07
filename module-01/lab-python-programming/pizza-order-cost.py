@@ -74,10 +74,9 @@ def create_order():
             if distance < 0:
                 print("Distance cannot be negative. Please enter a valid distance.")
                 continue
-            if distance <= 5:
-                total_cost += 2  # $2 for the first 5 miles
-            else:
-                total_cost += 2 + (distance - 5)  # $2 for the first 5 miles + $1 for each additional mile
+            total_cost += 2  # $2 for the first 5 miles
+            if distance > 5:
+                total_cost += (distance - 5)  # $2 for the first 5 miles + $1 for each additional mile
             break
         except ValueError:
             print("Invalid input. Please enter a valid distance.")
